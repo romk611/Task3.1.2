@@ -1,7 +1,0 @@
-
-#Лог админа: admin@admin.ru
-#Пароль админа: admin
-#Лог пользователя: user@user.ru
-#Пароль юзер: user
-
-http://localhost:8080/login
