@@ -1,13 +1,13 @@
-package com.example.spring_security;
+package com.example.task312;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Test312Application {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Test312Application.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }

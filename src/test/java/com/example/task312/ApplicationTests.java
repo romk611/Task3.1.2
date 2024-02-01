@@ -1,10 +1,10 @@
-package com.example.spring_security;
+package com.example.task312;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Test312ApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {

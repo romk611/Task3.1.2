@@ -1,4 +1,4 @@
-package com.example.spring_security.configs;
+package com.example.task312.configs;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -16,10 +16,12 @@ public class SuccessUserHandler implements AuthenticationSuccessHandler {
     @Override
     public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException {
         Set<String> roles = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
-        if (roles.contains("ROLE_USER")) {
-            httpServletResponse.sendRedirect("/users");
-        } else {
+        if (roles.contains("ROLE_ADMIN")) {
             httpServletResponse.sendRedirect("/admin/users");
+        } else if (roles.contains("ROLE_USER")) {
+            httpServletResponse.sendRedirect("/user");
+        } else if (roles.contains("ROLE_")) {
+            httpServletResponse.sendRedirect("/");
         }
     }
 }
